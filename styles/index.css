@@ -52,7 +52,7 @@ body {
           flex-direction: column;
 }
 
-.container .first .div1 {
+.container .first div {
   width: var(--width);
   height: var(--height);
   margin: auto;
@@ -69,7 +69,7 @@ body {
   height: var(--radius);
 }
 
-.container .second .div2 {
+.container .second div {
   width: var(--height);
   height: var(--width);
   margin: auto;

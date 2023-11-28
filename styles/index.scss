@@ -26,15 +26,15 @@ body {
     .first {
         @include div($radius);
         flex-direction: column;
-           .div1 {
+           div {
               @include shape($width,$height,$border);
            }
     }
     .second {
         @include div($radius);
-        .div2 {
+          div {
             @include shape($height,$width,$border);
-        }
+          }
     }
 };
 
