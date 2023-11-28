@@ -1,0 +1,20 @@
+@mixin shape ($width, $height, $border) {
+    width: $width;
+    height: $height;
+    margin: auto;
+    border: $border solid #EF4100;
+    border-radius: 50%;
+}
+
+@mixin div ($width, $height) {
+    position: absolute;
+    display: flex;
+    width: $width;
+    height: $height;
+}
+
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

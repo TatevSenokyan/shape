@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='./styles/index.css'>
+    <title>Task</title>
+</head>
+<body>
+    <div class="container">
+        <div class='first'>
+           <div class='div1'></div>
+           <div class='div1'></div>
+        </div>
+        <div class='second'>
+            <div class='div2'></div>
+            <div class='div2'></div>
+         </div>
+    </div>
+    <div class="config">
+        <span>change parameters</span>
+        <div class="input">
+            <input type='color' value='#2B2B2B'/>
+            <input type='text' placeholder="circle radius"/>
+        </div>
+        <button>save</button>
+    </div>
+
+</body>
+<script>
+     let color = '#2B2B2B';
+     let radius = 100;
+     const updateStyles = (color, radius) => {
+        document.body.style=
+          `--background: ${color}; --radius: ${radius}; --width: ${radius/10}; --height: ${radius/2}; --border: ${radius<50 ? '1px' : '5px'}`;
+     }
+
+     const updateEvent = () => {
+        color = document.querySelector('input[type=color]').value || color;
+        radius = document.querySelector('input[type=text]').value || radius;
+        updateStyles(color, radius);
+     }
+
+     updateStyles(color, radius);
+
+     document.querySelector('button').addEventListener('click', ()=>updateEvent());
+     
+</script>
+</html>

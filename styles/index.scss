@@ -1,0 +1,60 @@
+@import './partials/variables';
+@import './partials/mixin';
+body {
+    background-color: $bg-color;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    @include flex()
+}
+
+.container {
+    width: $radius;
+    height: $radius;
+    position: relative;
+    border:$border solid #EF4100;
+    border-radius: 50%;
+    margin: auto;
+    @include flex();
+    transform: rotate(20deg);
+
+
+    .first {
+        @include div($radius,$radius);
+        flex-direction: column;
+           .div1 {
+              @include shape($width,$height,$border);
+           }
+    }
+    .second {
+        @include div($radius,$radius);
+        .div2 {
+            @include shape($height,$width,$border);
+        }
+    }
+};
+
+.config {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    @include flex();
+    flex-direction: column;
+       span {
+           margin-bottom: 10px;
+       }
+       button {
+          cursor: pointer;
+       }
+      .input {
+          width: 100%;
+          display:flex;
+          input {
+              width: 50%
+          }
+      }
+}

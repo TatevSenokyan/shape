@@ -1,0 +1,117 @@
+body {
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: var(--radius);
+  height: var(--radius);
+  position: relative;
+  border: var(--border) solid #EF4100;
+  border-radius: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.container .first {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: var(--radius);
+  height: var(--radius);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .first .div1 {
+  width: var(--width);
+  height: var(--height);
+  margin: auto;
+  border: var(--border) solid #EF4100;
+  border-radius: 50%;
+}
+
+.container .second {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: var(--radius);
+  height: var(--radius);
+}
+
+.container .second .div2 {
+  width: var(--height);
+  height: var(--width);
+  margin: auto;
+  border: var(--border) solid #EF4100;
+  border-radius: 50%;
+}
+
+.config {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.config span {
+  margin-bottom: 10px;
+}
+
+.config button {
+  cursor: pointer;
+}
+
+.config .input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.config .input input {
+  width: 50%;
+}
+/*# sourceMappingURL=index.css.map */
