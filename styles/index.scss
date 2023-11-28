@@ -15,7 +15,7 @@ body {
 .container {
     width: $radius;
     height: $radius;
-    position: relative;
+    position: absolute;
     border:$border solid #EF4100;
     border-radius: 50%;
     margin: auto;
