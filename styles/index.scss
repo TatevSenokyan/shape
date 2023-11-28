@@ -24,14 +24,14 @@ body {
 
 
     .first {
-        @include div($radius,$radius);
+        @include div($radius);
         flex-direction: column;
            .div1 {
               @include shape($width,$height,$border);
            }
     }
     .second {
-        @include div($radius,$radius);
+        @include div($radius);
         .div2 {
             @include shape($height,$width,$border);
         }

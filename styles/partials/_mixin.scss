@@ -6,11 +6,11 @@
     border-radius: 50%;
 }
 
-@mixin div ($width, $height) {
+@mixin div ($radius) {
     position: absolute;
     display: flex;
-    width: $width;
-    height: $height;
+    width: $radius;
+    height: $radius;
 }
 
 @mixin flex() {
